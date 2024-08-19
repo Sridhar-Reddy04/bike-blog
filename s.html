@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bike Adventures</title>
+    <link rel="stylesheet" href="1.css">
+</head>
+<body>
+    <header>
+        <h1>Bike Adventures</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#bikes">Bikes</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="intro">
+            <h2>Exploring the World on Two Wheels</h2>
+            <p>Discover the joy of biking and explore different types of bikes, biking trails, and tips for a great ride. Join us on a journey to experience the freedom and excitement of biking!</p>
+        </section>
+
+        <!-- Featured Bikes -->
+        <section class="featured">
+            <h2>Featured Bikes</h2>
+
+            <article class="post">
+                <img src="C:\Users\nagab\Downloads\bike.jpg" width=250px height=260px>
+                <h3>Mountain Bike</h3>
+                <p>Mountain bikes are designed for off-road cycling. They feature sturdy frames, wide tires, and suspension systems to handle rough terrain. Ideal for adventure seekers who love to explore rugged trails and natural landscapes.</p>
+                <a href="#" class="read-more">Read More</a>
+            </article>
+
+            <article class="post">
+                <img src="C:\Users\nagab\Downloads\rb.jpeg"   width=250px height=260px alt="Road Bike">
+                <h3>Road Bike</h3>
+                <p>Road bikes are built for speed on paved roads. They have lightweight frames, thin tires, and a more aerodynamic design. Perfect for long-distance rides and racing enthusiasts who enjoy high-speed cycling on smooth surfaces.</p>
+                <a href="#" class="read-more">Read More</a>
+            </article>
+
+            <article class="post">
+                <img src="C:\Users\nagab\Downloads\eb.jpg"  width=250px height=260px  alt="Electric Bike">
+                <h3>Electric Bike</h3>
+                <p>Electric bikes come with a built-in motor to assist with pedaling. They offer an extra boost for uphill rides and longer distances. Ideal for commuters and recreational riders who want an easy and efficient way to travel.</p>
+                <a href="#" class="read-more">Read More</a>
+            </article>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <h2>About Us</h2>
+            <p>Biking is not just a mode of transportation; it's a lifestyle. Whether you’re into mountain biking, road cycling, or exploring new electric bike technologies, biking offers a sense of freedom and adventure. Our goal is to provide information and resources to help you get the most out of your biking experience.</p>
+            <p>We believe in promoting biking as a healthy, eco-friendly, and exhilarating activity. Join us in discovering new biking trails, learning about different bike types, and sharing your biking stories.</p>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <h2>Contact Us</h2>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"  required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"  required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <input type="submit" value="Send Message">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Bike Adventures. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var readDocs = document.querySelector(".read-instructions");
+            if (readDocs) {
+                readDocs.style.display = "block";
+            }
+        });
+    </script>
+</body>
+</html>
